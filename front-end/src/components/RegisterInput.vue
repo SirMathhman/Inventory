@@ -12,9 +12,9 @@ import {Component, Prop, Vue} from "vue-property-decorator";
 @Component({})
 export default class RegisterInput extends Vue {
   @Prop({required: true})
-  private readonly label: string;
+  private readonly label!: string;
 
   @Prop({default: false})
-  private readonly password: boolean;
+  private readonly password!: boolean;
 }
 </script>

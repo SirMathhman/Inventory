@@ -1,19 +1,31 @@
 <template>
-  <v-card>
-    <v-card-title>
-      Register
-    </v-card-title>
-    <v-card-text>
-      <RegisterInput label="Username"/>
-      <RegisterInput :password="true" label="Password"/>
-      <RegisterInput :password="true" label="Confirm Password"/>
-    </v-card-text>
-    <v-card-actions>
-      <v-btn>
-        Submit
-      </v-btn>
-    </v-card-actions>
-  </v-card>
+  <v-container class="fill-height">
+    <v-row align="center" justify="center">
+      <v-col>
+        <v-card>
+          <v-card-title>
+            <v-container>
+              <v-row align="center" justify="center">
+                  <span class="text-center ma-0 pa-0">
+                    Register
+                  </span>
+              </v-row>
+            </v-container>
+          </v-card-title>
+          <v-card-text>
+            <RegisterInput label="Username"/>
+            <RegisterInput :password="true" label="Password"/>
+            <RegisterInput :password="true" label="Confirm Password"/>
+          </v-card-text>
+          <v-card-actions>
+            <v-btn width="100%">
+              Submit
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script lang="ts">
@@ -27,4 +39,5 @@ export default class RegisterView extends Vue {
 
 }
 </script>
-
+<style scoped>
+</style>
