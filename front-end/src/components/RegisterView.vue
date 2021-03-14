@@ -6,9 +6,9 @@
           <v-card-title>
             <v-container>
               <v-row align="center" justify="center">
-                  <span class="text-center ma-0 pa-0">
-                    Register
-                  </span>
+                <span class="text-center ma-7 pa-0 text-h1">
+                  Register
+                </span>
               </v-row>
             </v-container>
           </v-card-title>
@@ -18,7 +18,7 @@
             <RegisterInput :password="true" label="Confirm Password"/>
           </v-card-text>
           <v-card-actions>
-            <v-btn width="100%">
+            <v-btn block>
               Submit
             </v-btn>
           </v-card-actions>

@@ -3,7 +3,7 @@
     <v-app-bar app>
       <v-container fluid>
         <v-row align="center" justify="space-between">
-          <span class="ma-0 pa-0 text-center text-h3">
+          <span class="ma-0 pa-0 text-center text-h4">
             Inventory
           </span>
           <v-btn v-on:click="$vuetify.theme.dark = !$vuetify.theme.dark">
